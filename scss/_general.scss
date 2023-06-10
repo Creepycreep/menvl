@@ -88,7 +88,6 @@ ul {
   &_sale {
     display: block;
 
-    margin: 10px 0;
     padding: 15px 30px;
     border: 1px solid $white;
     border-radius: 30px;
@@ -179,6 +178,7 @@ ul {
   font-size: 16px;
 
   &__container {
+    height: 100%;
     display: flex;
     align-items: center;
 
@@ -304,6 +304,9 @@ ul {
   .block {
     min-height: calc(100vh - 90.5px);
 
+    padding: 10px 0;
+    box-sizing: border-box;
+
     background: url(../img/mainbg.jpg) center/contain no-repeat, $black;
     color: $white;
 
@@ -323,7 +326,6 @@ ul {
         display: block;
       }
     }
-
   }
 
   .heading {
@@ -410,114 +412,127 @@ ul {
       }
     }
   }
+}
 
-  .social {
-    padding: 20px 0 40px;
+.social {
+  padding: 20px 0 40px;
 
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 
-    &__heading {
-      font-size: 32px;
-      margin-bottom: 40px;
+  &__heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 400;
 
-      &::before {
-        content: '';
+    a::before {
+      content: '';
 
-        display: block;
-        margin: 0 auto 25px;
-        width: 100px;
-        height: 100px;
+      display: block;
+      margin: 0 auto 25px;
+      width: 100px;
+      height: 100px;
 
-        background: url(../img/mainbg.jpg) center/contain no-repeat;
-        border: 2px solid $white;
-        border-radius: 50%;
-      }
+      background: url(../img/mainbg.jpg) center/contain no-repeat;
+      border: 2px solid $white;
+      border-radius: 50%;
     }
+  }
 
-    &-list {
-      width: 300px;
-      margin: auto;
-      font-size: 20px;
+  &-list {
+    width: 300px;
+    margin: auto;
+    font-size: 20px;
 
-      &__item {
-        width: 100%;
+    &__item {
+      width: 100%;
 
-        a {
-          display: flex;
-          justify-content: center;
-
-          padding: 10px;
-          border: 1px solid;
-          border-radius: 30px;
-
-          transition: all .4s;
-
-          &:before {
-            align-self: center;
-            margin-right: 10px;
-
-            content: '\e902';
-            font-family: icons;
-            font-size: 25px;
-          }
-        }
-
-        &:nth-child(n+2) {
-          margin-top: 20px;
-        }
-      }
-    }
-
-    .phone {
       a {
-        border-color: $phone;
-        background-color: $phone;
+        display: flex;
+        justify-content: center;
+
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 30px;
+
+        transition: all .4s;
 
         &:before {
-          content: '\e904';
-        }
-      }
-    }
+          align-self: center;
+          margin-right: 10px;
 
-    .whatsapp {
-      a {
-        border-color: $whatsapp;
-        background-color: $whatsapp;
-
-        &:before {
-          content: '\e905';
-        }
-      }
-    }
-
-    .telegram {
-      a {
-        border-color: $telegram;
-        background-color: $telegram;
-
-        &:before {
-          content: '\e903';
-        }
-      }
-    }
-
-    .instagram {
-      a {
-        border-color: $instagram;
-        background-color: $instagram;
-
-        &:before {
           content: '\e902';
+          font-family: icons;
+          font-size: 25px;
         }
       }
-    }
 
-    .phone a:hover,
-    .whatsapp a:hover,
-    .telegram a:hover,
-    .instagram a:hover {
-      background-color: transparent;
+      &:nth-child(n+2) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .phone {
+    a {
+      border-color: $phone;
+      background-color: $phone;
+
+      &:before {
+        content: '\e904';
+      }
+    }
+  }
+
+  .whatsapp {
+    a {
+      border-color: $whatsapp;
+      background-color: $whatsapp;
+
+      &:before {
+        content: '\e905';
+      }
+    }
+  }
+
+  .telegram {
+    a {
+      border-color: $telegram;
+      background-color: $telegram;
+
+      &:before {
+        content: '\e903';
+      }
+    }
+  }
+
+  .instagram {
+    a {
+      border-color: $instagram;
+      background-color: $instagram;
+
+      &:before {
+        content: '\e902';
+      }
+    }
+  }
+
+  .phone a:hover,
+  .whatsapp a:hover,
+  .telegram a:hover,
+  .instagram a:hover {
+    background-color: transparent;
+  }
+
+  &__copy {
+    margin-top: 30px;
+
+    &::before {
+      display: block;
+      width: 100%;
+      content: '';
+      border-top: 1px solid rgb(57, 57, 57);
+      margin-bottom: 29px;
     }
   }
 }
@@ -548,6 +563,7 @@ ul {
         font-size: 14px;
 
         &_sale {
+          margin-left: 5px;
           text-decoration: line-through;
           color: $gray;
         }
@@ -558,7 +574,7 @@ ul {
       &-arrow {
         z-index: 10;
         position: absolute;
-        top: 40%;
+        top: 35%;
 
         background-color: $light-gray;
         border-radius: 50px;

@@ -91,6 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
           slidesToShow: 3
         }
       },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1
+        }
+      },
     ]
   });
 })
