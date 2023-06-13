@@ -66,29 +66,29 @@
           padding-bottom: 20px;
         }
       }
+    }
 
-      .clothes {
-        position: static;
+    .clothes {
+      position: static;
 
-        max-height: 373px;
-        background-color: transparent;
+      max-height: 373px;
+      background-color: transparent;
 
-        &_hide {
-          max-height: 0;
-        }
+      &_hide {
+        max-height: 0;
+      }
 
-        ul {
-          max-height: fit-content;
+      ul {
+        max-height: fit-content;
 
-          padding-bottom: 0;
-          padding-top: 20px;
-          flex-wrap: nowrap;
+        padding-bottom: 0;
+        padding-top: 20px;
+        flex-wrap: nowrap;
 
-          align-items: start;
-          gap: 7px;
+        align-items: start;
+        gap: 7px;
 
-          font-size: 14px;
-        }
+        font-size: 14px;
       }
     }
   }

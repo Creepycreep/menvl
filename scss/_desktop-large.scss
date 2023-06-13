@@ -1,0 +1,63 @@
+@media (min-width: 1200px) {
+
+  .btn {
+    &_new-collection {
+      font-size: 22px;
+
+      padding: 15px;
+
+      max-width: 200px;
+    }
+  }
+
+  .header {
+    font-size: 20px;
+
+    &__logo {
+      font-size: 24px;
+    }
+
+    &__contacts {
+      font-size: 22px;
+    }
+
+    .clothes {
+      ul {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .main {
+    .block {
+      &__heading {
+        font-size: 50px;
+      }
+
+      &__subheading {
+        font-size: 20px;
+      }
+    }
+
+    .heading {
+      font-size: 26px;
+    }
+
+    .collection {
+      &-list {
+        &__item {
+          font-size: 27px;
+        }
+
+        &__img {
+          width: 120px;
+          height: 120px;
+        }
+
+        &__price {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

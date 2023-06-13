@@ -5,12 +5,12 @@
 
   .btn {
     &_menu {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
 
       span {
         &:nth-of-type(n+2) {
-          margin-top: 5px;
+          margin-top: 7px;
         }
       }
 
@@ -24,7 +24,7 @@
     }
 
     &_sale {
-      padding: 8px 15px;
+      padding: 10px 15px;
 
       font-size: 14px;
     }
@@ -34,6 +34,7 @@
       box-sizing: border-box;
       width: 100%;
       margin-top: 20px;
+      margin-bottom: 60px;
     }
   }
 
@@ -56,9 +57,16 @@
     .menu {
       top: 75.5px;
       width: 60%;
+      font-size: 18px;
 
       &_hidden {
         left: -60%;
+      }
+    }
+
+    .clothes {
+      ul {
+        font-size: 16px;
       }
     }
   }
@@ -68,7 +76,7 @@
       padding: 20px 0 50px;
 
       &__heading {
-        font-size: 30px;
+        font-size: 35px;
         margin-bottom: 15px;
       }
 
