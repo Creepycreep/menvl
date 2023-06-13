@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Slider
-  $('.multiply-items').slick({
+  $('.multiply-items-main').slick({
     infinite: true,
     nextArrow: '<div class="slick-next"></div>',
     prevArrow: '<div class="slick-prev"></div>',
@@ -99,4 +99,47 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     ]
   });
-})
+
+  $('.multiply-items-clothes').slick({
+    infinite: true,
+    nextArrow: '<div class="slick-next slick-next-clothes"></div>',
+    prevArrow: '<div class="slick-prev slick-prev-clothes"></div>',
+    dots: false,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 6
+        }
+      },
+      {
+        breakpoint: 961,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+
+      {
+        breakpoint: 370,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
