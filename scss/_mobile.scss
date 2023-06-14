@@ -212,4 +212,23 @@
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .clothes-list {
+    .slider-wrapper {
+      padding: 0;
+
+      .slider {
+        &__item {
+          .img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+
+        .item-name {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

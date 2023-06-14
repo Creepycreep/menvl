@@ -115,29 +115,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       },
       {
-        breakpoint: 961,
+        breakpoint: 641,
         settings: {
+          arrows: false,
+          slidesToShow: 5
+        }
+      },
+
+      {
+        breakpoint: 451,
+        settings: {
+          arrows: false,
           slidesToShow: 4
         }
       },
       {
-        breakpoint: 641,
+        breakpoint: 376,
         settings: {
+          arrows: false,
           slidesToShow: 3
-        }
-      },
-
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-
-      {
-        breakpoint: 370,
-        settings: {
-          slidesToShow: 1
         }
       }
     ]
