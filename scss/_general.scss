@@ -304,6 +304,12 @@ ul {
       padding-bottom: 3px;
       border-bottom: 1px solid transparent;
 
+      &:first-child {
+        a {
+          font-weight: 500;
+        }
+      }
+
       a:after {
         content: none;
       }
